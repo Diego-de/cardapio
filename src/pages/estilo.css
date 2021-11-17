@@ -1,0 +1,64 @@
+.CD{
+    color: darkred;
+}
+h1{
+    color: blueviolet;
+}
+h3{
+    color: blueviolet; 
+}
+body{
+    margin: 0px auto; 
+    margin-top: 200px;
+    text-align: center;
+    background-color: cornsilk;
+}
+.main{
+    background-color: chartreuse;
+    margin: 0px;
+    padding: 15px;
+}
+.area{
+    color: darkred; 
+}
+
+
+
+
+
+
+.pai{
+    background-color: mediumaquamarine;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: -80px;
+}
+.comida{
+    background-color: rgb(73, 176, 73) ;
+    margin: 30px;
+    padding: 5px;
+}
+.past{
+    background-color: greenyellow;
+    margin: 30px;
+    padding: 5px;
+}
+
+button{
+    padding: 5px;
+    margin: 5px;
+    width: 150px;
+}
+.cartao{
+    border: black solid;
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: -80px;
+    background-color: blue;
+}
+.cartao p {
+    color: rgb(1, 1, 41);
+}
+
+
