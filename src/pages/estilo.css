@@ -57,8 +57,11 @@ button{
     margin-top: -80px;
     background-color: blue;
 }
+.cartao h2 {
+    color: beige ;
+}
 .cartao p {
-    color: rgb(1, 1, 41);
+    color: beige ;
 }
 
 

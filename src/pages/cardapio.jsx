@@ -7,23 +7,22 @@ import { useStoreState, useStoreActions } from 'easy-peasy';
 const Cardapio = () =>{
 
 
-  const radioStoreLanche = useStoreState(state => state.radioLanche);
+  const radioStoreLanche = useStoreState(state => state.Lanche);
   const setRadioStore = useStoreActions(state => state.setLanche)
 
-  const radiosaborStore = useStoreState(state => state.radioComida);
+  const radiosaborStore = useStoreState(state => state.Comida);
   const setSaborlStore = useStoreActions(state => state.setComida)
 
   const [radioLanche,setLanche] = useState(radioStoreLanche);
   const [radioComida,setComida] = useState(radiosaborStore);
          
-
+ 
   
   const salvarDados = () =>{
     setRadioStore(radioLanche);
     setSaborlStore(radioComida);
+   
   }
-
-
   return (
     <div className="pai">
       

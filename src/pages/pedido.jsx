@@ -3,7 +3,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useStoreState, useStoreActions } from 'easy-peasy';
 
+
 const Pedido = () =>{
+
   const NomeStore = useStoreState(state => state.Nome);
   const DesejoStore = useStoreState(state => state.Desejo);
   const LancheStore = useStoreState(state => state.Lanche);
@@ -39,6 +41,7 @@ const Pedido = () =>{
 
       <Link to="/bebidas"><button >voltar</button></Link>
       <Link to="/"><button onClick={zerar}>Novo pedido</button></Link>
+      <Link to="/PaginaAPI"><button>Veja o Horario via API</button></Link>
     </div>
   );
 }

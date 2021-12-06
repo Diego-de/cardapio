@@ -4,13 +4,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { StoreProvider } from 'easy-peasy';
 import { store } from './store/dados';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
+const queryClient = new QueryClient()
 
 ReactDOM.render(
   <React.StrictMode>
-    <StoreProvider store={store} >
-    <App />
-    </StoreProvider>
+    <QueryClientProvider client={queryClient}>
+      <StoreProvider store={store} >
+        <App />
+      </StoreProvider>
+    </QueryClientProvider>
   </React.StrictMode>,
   
   document.getElementById('root')
